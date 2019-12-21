@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="farm" content="tamilnadu farming" />
+    <meta name="goat" content="Tellicherry" />
+    <meta name="chicken" content="chiken farming" />
+    <meta name="dog" content="dog for sale" />
+    <meta name="erode" content="goat for sale" />
+    <meta name="erode" content="chicken for sale" />
+    <meta name="gobichettipalayam" content="goat for sale" />
+    <meta name="gobichettipalayam" content="chicken for sale" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -12,10 +20,19 @@
         integrity="sha384-yrfSO0DBjS56u5M+SjWTyAHujrkiYVtRYh2dtB3yLQtUz3bodOeialO59u5lUCFF" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <title>ATR Farms</title>
     <style>
         body {
             background-color: rgba(209, 220, 223, 0.356);
+            /* background-image: url("images/bgimage_1.jpg");
+            /* background-color: #cccccc; Used if the image is unavailable */
+            /* height: 1500px; You must set a specified height */
+            /* background-position: center; Center the image */
+            /* background-repeat: no-repeat; Do not repeat the image */
+            background-size: cover; Resize the background image to cover the entire container */
+
         }
 
         h1 {
@@ -30,29 +47,28 @@
             width: 550px;
             height: 350px;
         }
-
-
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-2">
         <a class="navbar-brand" href="">
             <i class="fa fa-pagelines mr-3">
                 ATR Farm
             </i>
         </a>
+        <a href="ta/" class="nav-link">தமிழ்</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">What we do</a>
-                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">What we do</a>
+                    </li> -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
@@ -72,11 +88,17 @@
                         External Sites
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="http://www.tnau.ac.in/" target="_blank">TNAU</a>
-                        <a class="dropdown-item" href="https://www.youtube.com/playlist?list=PL_aBo7x_bkOAdE8Ww5vFiIWopQic6x9vN" target="_blank">Vivasayam(Youtube)</a>
+                        <a class="dropdown-item" href="http://agritech.tnau.ac.in/" target="_blank">TNAU</a>
+                        <a class="dropdown-item"
+                            href="https://www.youtube.com/playlist?list=PL_aBo7x_bkOAdE8Ww5vFiIWopQic6x9vN"
+                            target="_blank">Vivasayam(Youtube)</a>
                     </div>
                 </li>
-            
+                <li class="nav-item">
+                    <a href="./gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                </li>
             </ul>
             <div class="mx-auto order-3">
                 <ul class="navbar-nav mr-auto">
@@ -90,28 +112,27 @@
                         <a class="fa fa-twitter" href="http://twitter.com" target="_blank"></a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="fa fa-map-marker" href="https://goo.gl/maps/LUegfXjJcdRppzaPA" target="_blank"> Locate Us</a>
+                        <a class="fa fa-map-marker" href="https://goo.gl/maps/LUegfXjJcdRppzaPA" target="_blank"> Locate
+                            Us</a>
                     </li>
-                    <form class="form-inline ml-4 searchform" action="https://www.google.com/search" method="get" name="searchform"
-                        target="_blank">
-                        <input class="form-control mr-sm-2 search" type="search" autocomplete="on" name="q" placeholder="Search Google"
-                            aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-0 text-white" type="submit">Search</button>
-                    </form>
+                    <!-- <form class="form-inline ml-4 searchform" action="https://www.google.com/search" method="get" name="searchform"
+                            target="_blank">
+                            <input class="form-control mr-sm-2 search" type="search" autocomplete="on" name="q" placeholder="Search Google"
+                                aria-label="Search">
+                            <button class="btn btn-outline-light my-2 my-sm-0 text-white" type="submit">Search</button>
+                        </form> -->
                 </ul>
             </div>
-            
         </div>
     </nav>
-
     <div class="container">
-        <div class="row border">
-            <section>
-                <article>
-                    <h2 class="text-center p-4">Welcome / வணக்கம் <img class="vanakkam" src="images/namaste-svgrepo-com.svg" alt="vanakkam"></h2>
-                     <p class="text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse in quos nisi reiciendis earum ut est asperiores, nobis cupiditate nam qui magnam ipsam laudantium commodi quam consequuntur rerum, maiores nulla?</p>
-                </article>
-            </section>
+        <div class="row d-flex justify-content-end">
+                <h2 class="d-block my-2 mb-4">
+                    Welcome <img class="vanakkam" src="images/namaste-svgrepo-com.svg" alt="vanakkam"> வணக்கம்
+                </h2>
+                <h5>We provide Quality Goat and Chicken live stocks. Our animals are grown on Organic environment with adequate space and
+                feeds</h5>
+                     
         </div>
     </div>
     <div class="container my-5">
